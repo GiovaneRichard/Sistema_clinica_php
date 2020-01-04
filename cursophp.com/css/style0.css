@@ -1,0 +1,45 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+html{
+  background: url("../Imagens/fundo.jpg")no-repeat;
+  webkit-background-size:cover;
+  background-size: cover;
+}
+
+
+.corpo-form{
+  width: 420px;
+  margin: 300px auto 0px auto;
+  font-size: 14pt;
+}
+
+h1{
+  text-align: center;
+  padding: 20px;
+  font-size: 36pt;
+  color: white;
+}
+
+.input{
+
+  height: 45px;
+  width: 420px;
+  border-radius: 10px;
+  font-size: 14pt;
+  padding: 8px 20px;
+  background-color: rgba(255,255,255,0.2);
+}
+
+#btn{
+  height: 45px;
+  width: 420px;
+  border-radius: 10px;
+  font-size: 14pt;
+  padding: 8px 20px;
+  padding-bottom: 30px;
+  border: 1px solid black;
+
+}
