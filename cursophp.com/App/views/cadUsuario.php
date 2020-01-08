@@ -22,6 +22,7 @@
   <!-- Google Font: Source Sans Pro -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <link rel="stylesheet" href="../../css/bulma.min.css" />
+
 </head>
 <body class="hold-transition register-page">
 <div class="register-box">
