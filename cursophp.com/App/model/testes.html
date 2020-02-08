@@ -1,0 +1,104 @@
+<?php 
+
+
+ ?>
+
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<title>Area de Testes</title>
+
+ 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.min.css">
+ 	<script src="../../js/bootstrap.min.js" type="text/javascript"></script>
+  	<script src="../../js/bootstrap-notify.min.js" type="text/javascript"></script>
+  	<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+ 	<script src="../../js/jquery-3.4.1.min.js" type="text/javascript"></script>
+  	<script src="../../js/jquery.mask.min.js" type="text/javascript"></script>
+
+  	<script src="../../js/additional-methods.min.js" type="text/javascript"></script>
+  	<script src="../../js/jquery.validate.min.js" type="text/javascript"></script>
+  	<script src="../../js/localization/messages_pt_BR.min.js" type="text/javascript"></script>
+
+  	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  	
+
+<script type="text/javascript">
+
+	// Validação dos campos no form
+	$(document).ready(function(){
+	   	$("#cadastro").validate({
+	  		rules:{
+	  			nome:{
+	  				required: true,
+	  				maxlength: 100,
+	  				minlength: 2,
+	  			},
+	  			email:{
+	  				email: true
+	  			}
+	  		},
+	  		submitHandler: function(){
+	  			alert("sucesso!!!")
+	  		}
+	  	})
+	})
+
+	// Máscara telefone
+	$(document).ready(function(){
+	    $('#telefone').mask('(00)00000-0000');
+
+	})
+
+
+	function confirmacao(){
+
+	    $.notify({
+		// options
+		message: 'Hello World' 
+	},{
+		// settings
+		type: 'danger'
+	});
+
+	    return true;
+	}
+
+</script>
+ </head>
+ <body>
+ 	<div class="container">
+		<form name="cadastro" id="cadastro" method="POST" action="." onsubmit="return confirmacao()">
+			<div class="from-group">
+				<label>Nome</label>
+				<input type="text" name="nome" id="nome" class="form-control">
+			</div>
+
+			<div class="from-group">
+				<label>email</label>
+				<input type="email" name="email" id="email" class="form-control">
+			</div>
+
+			<div class="from-group">
+				<label>Telefone</label>
+				<input type="text" name="telefone" id="telefone" class="form-control">
+			</div>
+
+				
+			<button type="button" class="btn btn-primary btn-lg" data-dismiss="toast">
+  				<span class="glyphicon glyphicon-star" aria-hidden="true"></span> Star
+			</button>
+		
+			
+			<!-- Success message -->
+			<a class="btn btn-success" onclick="toastr.success('Hi! I am success message.');">Success message</a>
+
+			
+		</form> 	
+ 	</div>
+ </body>
+ </html>

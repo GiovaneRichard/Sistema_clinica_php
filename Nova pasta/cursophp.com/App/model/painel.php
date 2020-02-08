@@ -36,7 +36,7 @@
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+  <nav class="main-header navbar navbar-expand navbar-cyan navbar-light">
     <!-- Left navbar links -->
     <ul class="navbar-nav">
       <li class="nav-item">
@@ -161,14 +161,14 @@
   <!-- Main Sidebar Container -->
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a href="painel.php" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
            style="opacity: .8">
       <span class="brand-text font-weight-light">estética do CORPO </span>
     </a>
 
     <!-- Sidebar -->
-    <div class="sidebar">
+    <div class="sidebar slider">
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel mt-3 pb-3 mb-3 d-flex">
         <div class="image">
@@ -200,25 +200,33 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../views/cadUsuario.html" class="nav-link">
+                <a href="../views/cadUsuario.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cadastrar Usuário</p>
                 </a>
               </li>
               <li class="nav-item">
-                <!--<a href="./index3.html" class="nav-link">-->
-                <a href="../views/cadCliente.html" class="nav-link">
+                <!--<a href="../views/cadCliente.html" class="nav-link">-->
+                <a href="area_testes.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Cadastrar Cliente</p>
                 </a>
               </li>
+              <li class="nav-item">
+                <!--<a href="../views/cadCliente.html" class="nav-link">-->
+                <a href="listar_usuarios.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Usuários do sistema</p>
+                </a>
+              </li>
+
             </ul>
           </li>
           <li class="nav-item">
-            <a href="pages/widgets.html" class="nav-link">
+            <a href="uploadImagens.php" class="nav-link">
               <i class="nav-icon fas fa-th"></i>
               <p>
-                Widgets
+                Imagens Clientes
                 <span class="right badge badge-danger">New</span>
               </p>
             </a>
@@ -227,14 +235,14 @@
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Layout Options
+                Área de testes
                 <i class="fas fa-angle-left right"></i>
                 <span class="badge badge-info right">6</span>
               </p>
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="pages/layout/top-nav.html" class="nav-link">
+                <a href="../../index.php" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Top Navigation</p>
                 </a>
@@ -1331,39 +1339,18 @@
 </div>
 <!-- ./wrapper -->
 
+<!-- REQUIRED SCRIPTS -->
+
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
-<!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script>
-  $.widget.bridge('uibutton', $.ui.button)
-</script>
-<!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
-<!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
-<!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
-<!-- JQVMap -->
-<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
-<!-- jQuery Knob Chart -->
-<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
-<!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
-<!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
-<!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
-<!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
-<!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
-<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="dist/js/pages/dashboard.js"></script>
-<!-- AdminLTE for demo purposes -->
-<script src="dist/js/demo.js"></script>
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE -->
+<script src="../../dist/js/adminlte.js"></script>
+
+<!-- OPTIONAL SCRIPTS -->
+<script src="../../plugins/chart.js/Chart.min.js"></script>
+<script src="../../dist/js/demo.js"></script>
+<script src="../../dist/js/pages/dashboard3.js"></script>
 </body>
 </html>
